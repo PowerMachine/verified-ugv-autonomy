@@ -1,0 +1,15 @@
+ros:
+  discovery_only: true
+  ros_version: auto
+  topic_names:
+    velocity_command: null
+    odometry: null
+    scan: null
+    camera: null
+    tf: null
+    diagnostics: null
+
+jackal:
+  default_mode: read_only
+  require_topic_discovery_before_execution: true
+  forbid_physical_execution_in_initial_milestone: true

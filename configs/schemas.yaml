@@ -1,0 +1,30 @@
+schemas:
+  artifact_types:
+    - code_patch
+    - config_patch
+    - prompt_patch
+    - workflow_candidate
+    - report
+    - action_candidate
+    - skill_graph
+    - robot_primitive_sequence
+    - digital_twin_update
+
+  action_types:
+    - stop
+    - wait
+    - velocity_candidate
+    - primitive_sequence
+    - skill_graph
+    - inspect_point
+    - return_home
+    - report_only
+
+  promotion_decisions:
+    - reject
+    - suggest_only
+    - dry_run
+    - human_approval
+    - limited_promote
+    - execute
+    - rollback

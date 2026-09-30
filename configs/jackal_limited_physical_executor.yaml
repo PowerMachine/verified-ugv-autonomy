@@ -1,0 +1,8 @@
+allowed_topic: "/cmd_vel"
+max_linear_x: 0.05
+max_angular_z: 0.10
+max_duration_ms: 700
+command_ttl_ms: 800
+publish_rate_hz: 10
+stop_publish_count: 5
+require_operator_armed: true

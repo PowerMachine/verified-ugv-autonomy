@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+runs/*
+!runs/.gitkeep
+
+*.log
+*.tmp
+
+local_inputs/
+local_outputs/
+*.env
+*.db
+*.sqlite*

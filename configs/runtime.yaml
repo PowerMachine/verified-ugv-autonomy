@@ -1,0 +1,17 @@
+runtime:
+  read_only: true
+  physical_execution: false
+  default_policy: full_governed
+  default_output_dir: runs
+  audit_required: true
+
+slo:
+  default_budget_ms: 500
+  model_call_budget_ms: 2000
+  control_deadline_ms: 500
+
+promotion:
+  min_evidence_score: 0.5
+  min_model_confidence: 0.5
+  require_dryrun_for_physical: true
+  rollback_required_for_execute: true

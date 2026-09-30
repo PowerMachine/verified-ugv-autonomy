@@ -1,0 +1,20 @@
+safety:
+  read_only: true
+  physical_execution_enabled: false
+  max_linear_mps: 0.1
+  max_angular_radps: 0.2
+  max_accel_mps2: 0.15
+  default_ttl_ms: 500
+  deadman_timeout_ms: 1000
+  operator_armed: false
+  emergency_stop_available: false
+  geofence_enabled: false
+  obstacle_stop_enabled: true
+  require_operator_confirmation: true
+  allowed_actions:
+    - stop
+    - wait
+    - inspect_point
+    - return_home
+    - report_only
+    - primitive_sequence

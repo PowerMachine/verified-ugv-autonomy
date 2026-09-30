@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-autonomy-runtime"
+version = "0.1.0"
+description = "SLO-aware verified AI autonomy runtime for Jackal UGV and physical-system adapters."
+requires-python = ">=3.10"
+dependencies = [
+  "pydantic>=2",
+  "pyyaml>=6",
+  "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ai_autonomy_runtime*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

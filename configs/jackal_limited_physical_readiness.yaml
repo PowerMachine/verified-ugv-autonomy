@@ -1,0 +1,17 @@
+required_ack_phrase: "I_ACK_LIMITED_PHYSICAL_EXECUTION_RISK"
+min_remote_suite_cases: 8
+min_live_samples: 1
+max_linear_x: 0.05
+max_angular_z: 0.15
+max_duration_ms: 700
+max_command_ttl_ms: 800
+require_env_enable: true
+require_estop_available: true
+require_safe_area_confirmed: true
+require_deadman_tested: true
+require_stop_policy_tested: true
+require_remote_suite_passed: true
+require_live_observation: true
+require_publish_disabled_all_in_suite: true
+require_no_suite_execution: true
+require_no_suite_ros_publish: true

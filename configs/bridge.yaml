@@ -1,0 +1,11 @@
+host: "192.0.2.10"
+user: "robot"
+project_dir: "~/ai-autonomy-ugv"
+ros_master_uri: "http://192.0.2.10:11311"
+ros_ip: "192.0.2.10"
+python_executable: "python3"
+executor_config: "configs/jackal_executor_safety.yaml"
+ssh_connect_timeout_s: 10
+executor_timeout_s: 15
+default_target_robot: "jackal"
+default_dry_run: true

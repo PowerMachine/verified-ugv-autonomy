@@ -1,0 +1,24 @@
+model_backends:
+  blackwell_llm:
+    type: openai_compatible
+    base_url: ${BLACKWELL_LLM_BASE_URL}
+    model: ${BLACKWELL_LLM_MODEL}
+    api_key_env: BLACKWELL_LLM_API_KEY
+
+  blackwell_vlm:
+    type: openai_compatible
+    base_url: ${BLACKWELL_VLM_BASE_URL}
+    model: ${BLACKWELL_VLM_MODEL}
+    api_key_env: BLACKWELL_VLM_API_KEY
+
+  local_4070ti_model:
+    type: openai_compatible
+    base_url: ${LOCAL_LLM_BASE_URL}
+    model: ${LOCAL_LLM_MODEL}
+    api_key_env: LOCAL_LLM_API_KEY
+
+  rule_fallback:
+    type: deterministic
+
+  mock_model:
+    type: mock
