@@ -41,3 +41,7 @@ PROJECT.md            research question and initial milestone
 The example address `192.0.2.10` is a reserved documentation address. Supply your own authorized configuration only in an isolated test environment; do not treat the included defaults as deployment settings.
 
 This project demonstrates an engineering approach to bounded autonomy, not autonomous navigation performance or production readiness.
+
+## Historical bench evidence
+
+The [June 2026 UGV bench notes](docs/june-2026-ugv-bench-notes.md) document a separate, supervised hardware check: ROS topic discovery, remote manual wheel commands with the robot inverted, and a 2D observation view. The public code remains a sanitized research snapshot and does not reproduce that hardware run.
